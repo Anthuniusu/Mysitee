@@ -1,0 +1,76 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(bg.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 200vh;
+}
+
+
+.hstyle{
+    color: rgb(100, 32, 170);
+}
+.divs{
+    margin: 10px;
+                width: 190px;
+                height: 500px;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 40px;
+                padding: 20px;
+                box-shadow: 0 4px 5px rgb(86,33,53);
+                transition: transform 0.3s ease;
+                position: relative;
+}
+.divs img{
+    width: 200px;
+    height: 150px;
+    border-radius: 25%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.divs p{
+    margin: 5px 0;
+    font-size: 9.5px;
+    color: #000000;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.container{
+    
+    display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                padding: 25px;
+}
+header{
+    background: linear-gradient(135deg, rgb(100, 32, 170), #ffe7de);
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: fixed;
+    z-index: 1;
+}
+.content{
+    padding: 16px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content{
+    padding-top: 102px;
+}
+
+
